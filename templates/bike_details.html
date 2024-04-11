@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BikeInfo.com - {{ bike['name'] }}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style1.css') }}">
+</head>
+<header>
+  <div class="header-container">
+    <div class="logo">BikeInfo.com</div>
+    <nav>
+      <ul class="navbar">
+        <li><a href="{{ url_for('browse_brands') }}">Home</a></li>
+        <li>
+          <a href="#bike">Bikes</a>
+        </li>
+        <li><a href="#des">About</a></li>
+        <li><a href="#foot">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-right">
+      <div class="login">Login</div>
+    </div>
+  </div>
+</header>
+<body>
+<section id="bike">
+    <h2>{{ bike['name'] }}</h2>
+    <div class="bike-image" ><div id="canvas-container">
+      <img id="myImg" src="{{ url_for('static', filename=bike['image_url']) }}" alt="Northern Lights, Norway" width="90%" height="90%"></div>
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  
+</div>
+
+    </div>
+    <div class="bike-info"><h3>Bike Details</h3>
+      <ul>
+        
+        <li><strong>Brand:</strong> {{ bike['brand'] }}</li>
+        <li><strong>Type:</strong> {{ bike['type'] }}</li>
+        <li><strong>Price:</strong> {{ bike['price'] }}</li>
+        <li><strong>Engine Capacity:</strong> {{ bike['engine'] }}</li>
+        <li><strong>Displacement:</strong> {{ bike['dis'] }}</li>
+        <li><strong>Mileage:</strong> {{ bike['mile'] }}</li>
+        <li><strong>Top Speed:</strong> {{ bike['speed'] }}</li>
+      </ul>
+    </div>
+    
+  </section>
+<h3 id="des">Description</h3>
+<p>{{ bike['des'] }}</p>
+  <section id="reviews">
+    <h3>Reviews</h3>
+  {% if reviews %}
+    {% for review in reviews.values() %}
+      <div class="review">
+        <h4>{{ review['title'] }}</h4>
+        <p>{{ review['content'] }}</p>
+        <div class="rating">
+          <span class="fa fa-star{% if review['rating'] >= 1 %} checked{% endif %}"></span>
+          <span class="fa fa-star{% if review['rating'] >= 2 %} checked{% endif %}"></span>
+          <span class="fa fa-star{% if review['rating'] >= 3 %} checked{% endif %}"></span>
+          <span class="fa fa-star{% if review['rating'] >= 4 %} checked{% endif %}"></span>
+          <span class="fa fa-star{% if review['rating'] == 5 %} checked{% endif %}"></span>
+        </div>
+      </div>
+    {% endfor %}
+  {% else %}
+    <p>No reviews available.</p>
+  {% endif %}
+
+    <h3>Write a Review</h3>
+    <form action="/bike/{{ bike_id }}/review" method="POST">
+      <label for="user">Your Name:</label>
+      <input type="text" id="user" name="user" required><br>
+
+      <label for="rating">Rating:</label>
+      <select id="rating" name="rating" required>
+        <option value="5">5 - Excellent</option>
+        <option value="4">4 - Very Good</option>
+        <option value="3">3 - Good</option>
+        <option value="2">2 - Fair</option>
+        <option value="1">1 - Poor</option>
+      </select><br>
+
+      <label for="comment">Comment:</label><br>
+      <textarea id="comment" name="comment" rows="4" cols="50" required></textarea><br>
+
+      <button type="submit" ">Submit Review</button>
+    </form>
+  </section>
+
+  <footer id="foot">
+    <div class="footer-container">
+      <div class="footer-links">
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms and Conditions</a></li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <ul>
+          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+
+<script>
+  // Get the modal
+  var modal = document.getElementById('myModal');
+  
+  // Get the image and insert it inside the modal - use its "alt" text as a caption
+  var img = document.getElementById('myImg');
+  var modalImg = document.getElementById("img01");
+  var captionText = document.getElementById("caption");
+  img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+  }
+  
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+  
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() { 
+    modal.style.display = "none";
+  }
+
+  </script>
+  

@@ -1,0 +1,482 @@
+
+
+  /* Header styles */
+header {
+  background-color: #f9f9f9;
+  padding: 10px 20px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  padding-left: 2%;
+}
+
+/* Navigation bar styles */
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 700px;
+}
+
+.navbar li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.navbar li a {
+  display: block;
+  color: #333;
+  text-decoration: none;
+}
+
+.navbar li a:hover {
+  background-color: #ddd;
+}
+
+/* Dropdown menu styles */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Style the dropdown links */
+.dropdown-content a {
+  color: #333;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Search bar styles */
+.search-bar {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.search-bar input[type="text"] {
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+}
+
+.search-bar button {
+  padding: 8px 12px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Login styles */
+.login {
+  display: inline-block;
+  padding: 8px 12px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  background-color: #f0f0f0;
+  padding: 20px 0;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+#search-bar {
+  text-align: center;
+  margin: 20px 0;
+}
+
+section {
+  padding: 40px 0;
+}
+
+h2 {
+  text-align: center;
+}
+
+.button {
+  display: block;
+  width: 200px;
+  margin: 20px auto;
+  padding: 12px 24px;
+  background-color: #007bff;
+  color: #fff;
+  text-align: center;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform: scale(0.1)} 
+  to {transform: scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+
+.bike-image{
+  float: left;
+  height: 400px;
+  width: 50%;
+  
+}
+.bike-info{
+  float: right;
+  height: 400px;
+  width: 50%;
+}
+#bike{
+  padding-left: 20px;
+}
+form {
+  margin-top: 20px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form input[type="text"],
+form select,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+form textarea {
+  resize: vertical;
+}
+
+form button[type="submit"] {
+  padding: 12px 20px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+form button[type="submit"]:focus {
+  outline: none;
+}
+
+/* Form Styling */
+form {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+form label {
+  color: #333;
+}
+
+form input[type="text"],
+form select,
+form textarea {
+  background-color: #fff;
+  color: #333;
+  transition: border-color 0.3s ease;
+}
+
+form input[type="text"]:focus,
+form select:focus,
+form textarea:focus {
+  border-color: #4caf50;
+}
+
+form button[type="submit"] {
+  background-color: #4caf50;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+form button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.review {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.review-title {
+  margin-top: 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.review-content {
+  margin-bottom: 10px;
+  color: #666;
+}
+
+.rating {
+  color: #ff9800;
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.rating .fa-star {
+  margin-right: 5px;
+}
+
+.rating .fa-star.checked {
+  color: #ffc107;
+}
+
+/* Footer Section */
+footer {
+  background-color: #222;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-links ul,
+.footer-social ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.footer-links ul li,
+.footer-social ul li {
+  margin-right: 20px;
+}
+
+.footer-links ul li:last-child,
+.footer-social ul li:last-child {
+  margin-right: 0;
+}
+
+.footer-links ul li a,
+.footer-social ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover,
+.footer-social ul li a:hover {
+  color: #ccc;
+}
+
+.footer-social ul li a {
+  font-size: 20px;
+}
+
+.footer-social ul li a i {
+  transition: color 0.3s ease;
+}
+
+.footer-social ul li a:hover i {
+  color: #ccc;
+}
+
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 15px;
+  size: 3px;
+}
+
+strong {
+  font-weight: bold;
+}
+
+/* Styling for the bike details */
+ul {
+  
+  border-radius: 5px;
+  padding: 15px;
+  width: 90%;
+  height: 70%;
+}
+
+
+/* Styling specific properties */
+.brand {
+  font-size: 18px;
+  color: #333;
+}
+
+.type {
+  font-style: italic;
+  color: #777;
+}
+
+.price {
+  color: #ff0000;
+}
+
+.description {
+  font-size: 14px;
+  color: #555;
+}
+
+.engine-type {
+  text-transform: uppercase;
+}
+
+.displacement {
+  color: #333;
+}
+
+.mileage {
+  color: #333;
+}
+
+.top-speed {
+  color: #333;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BikeInfo.com - Search Results</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <header>
+    <!-- Header content -->
+  </header>
+
+  <section id="search-results">
+    <h2>Search Results for "{{ query }}"</h2>
+    <ul>
+      {% for result in search_results %}
+        <li>
+          <a href="{{ url_for('bike_details', bike_id=result['id']) }}">
+            <img src="{{ result['image_url'] }}" alt="{{ result['name'] }}">
+            <h3>{{ result['name'] }}</h3>
+            <p>Brand: {{ result['brand'] }}</p>
+            <p>Type: {{ result['type'] }}</p>
+            <p>Price: ${{ result['price'] }}</p>
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  <footer>
+    <!-- Footer content -->
+  </footer>
+</body>
+</html>

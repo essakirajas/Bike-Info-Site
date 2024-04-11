@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BikeInfo.com - {{ brand['name'] }} Bikes</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<header>
+  <div class="header-container">
+    <div class="logo">BikeInfo.com</div>
+    <nav>
+      <ul class="navbar">
+        <li><a href="{{ url_for('browse_brands') }}">Home</a></li>
+        <li class="dropdown">
+          <a href="#">Bikes</a>
+        </li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-right">
+      <div class="search-bar">
+        <form >
+          <input type="text" name="search_query" placeholder="Search for bikes">
+          <button type="submit">Search</button>
+        </form>
+      </div>
+      <div class="login">Login</div>
+    </div>
+  </div>
+</header>
+<body>
+  <header>
+    <div class="brand-info">
+      <img class="brand-logo" src="{{ url_for('static', filename=brand['logo']) }}" alt="{{ brand['name'] }}">
+      <div class="brand-details">
+        <h1>{{ brand['name'] }}</h1>
+        <p>{{ brand['description'] }}</p>
+      </div>
+    </div>
+  </header>
+
+  <ul class="bike-list">
+    {% for bike_id, bike in brand['bikes'].items() %}
+      <li class="bike-card">
+        <img class="bike-image" src="{{ url_for('static', filename=bike['img']) }}" alt="{{ bike['name'] }}">
+        <div class="bike-details">
+          <h3 class="bike-name">{{ bike['name'] }}</h3>
+          <h3 class="bike-type">Version: {{ bike['type'] }}</h3>
+          <p class="bike-price">Price: {{ bike['price'] }}</p>
+            <a href="{{ url_for('bike_details', bike_id=bike_id) }}" class="button">View Details</a>
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-links">
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms and Conditions</a></li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <ul>
+          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

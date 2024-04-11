@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BikeInfo.com - Your Ultimate Source for Bike Details</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo">BikeInfo.com</div>
+      <nav>
+        <ul class="navbar">
+          <li><a href="{{ url_for('browse_brands') }}">Home</a></li>
+          <li>
+            <a href="#browse-brands">Bikes</a>
+          </li>
+          <li><a href="#community-forums">About</a></li>
+          <li><a href="#footer-container">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-right">
+        <div class="search-bar">
+          <form ></form>
+            <input type="text" name="search_query" placeholder="Search for bikes">
+            <button type="submit">Search</button>
+          </form>
+        </div>
+        <div class="login">Login</div>
+      </div>
+    </div>
+  </header>
+  
+
+  <section id="featured-bikes">
+    <h2>Featured Bikes</h2>
+    <div class="bike-carousel">
+      <div class="bike-item">
+        <img src="{{ url_for('static', filename='su21.webp') }}" alt="Bike 1">
+        <h3>Suzuki Hayabusa</h3>
+        <p>Suzuki Hayabusa is a super bike available at a starting price of Rs. 16,97,240 in India. It is available in only 1 variant and 3 colours. The Suzuki Hayabusa is powered by 1340cc BS6 engine which develops a power of 190 bhp and a torque of 142 Nm.</p>
+        <a href="{{ url_for('bike_details', bike_id='bike21') }}" class="button">View Details</a>
+      </div>
+      <div class="bike-item">
+        <img src="{{ url_for('static', filename='ya26.webp') }}" alt="Bike 2">
+        <h3>Yamaha MT 15 V2</h3>
+        <p>Yamaha MT 15 V2 is a street bike available in 2 variants and 6 colours. MT 15 V2 price starts at Rs. 1,65,903 in India with top variant price starting from Rs. 1,70,408. The Yamaha MT 15 V2 is powered by 155cc BS6 engine which develops a power of 18.1 bhp and a torque of 14.1 Nm.</p>
+        <a href="{{ url_for('bike_details', bike_id='bike26') }}" class="button">View Details</a>
+      </div>
+      <div class="bike-item">
+        <img src="{{ url_for('static', filename='re1.webp') }}" alt="Bike 3">
+        <h3>Royal Enfield Hunter 350</h3>
+        <p>Royal Enfield Hunter 350 is a cruiser bike available in 3 variants and 8 colours. Hunter 350 price starts at Rs. 1,49,900 in India with top variant price starting from Rs. 1,74,430. </p>
+        <a href="{{ url_for('bike_details', bike_id='bike1') }}" class="button">View Details</a>
+      </div>
+      <!-- Add more bike items here -->
+    </div>
+  </section>
+  
+  <section id="browse-brands">
+    <h2>Browse by Brands</h2>
+    <div class="brand-grid">
+      <div class="brand-card">
+        <a href="{{ url_for('brand_bikes', brand='Brand1') }}">
+          <div class="brand-image">
+            <img src="{{ url_for('static', filename='re.jpg') }}" alt="Brand1">
+          </div>
+          <h3 class="brand-name">Royal Enfield</h3>
+        </a>
+      </div>
+      <div class="brand-card">
+        <a href="{{ url_for('brand_bikes', brand='Brand2') }}">
+          <div class="brand-image">
+            <img src="{{ url_for('static', filename='bajaj.jpg') }}" alt="Brand2">
+          </div>
+          <h3 class="brand-name">Bajaj</h3>
+        </a>
+      </div>
+      <div class="brand-card">
+        <a href="{{ url_for('brand_bikes', brand='Brand3') }}">
+          <div class="brand-image">
+            <img src="{{ url_for('static', filename='ktm.jpg') }}" alt="Brand3">
+          </div>
+          <h3 class="brand-name">KTM</h3>
+        </a>
+      </div>
+      <div class="brand-card">
+        <a href="{{ url_for('brand_bikes', brand='Brand4') }}">
+          <div class="brand-image">
+            <img src="{{ url_for('static', filename='tvs.jpg') }}" alt="Brand4">
+          </div>
+          <h3 class="brand-name">TVS</h3>
+        </a>
+      </div>
+      <div class="brand-card">
+        <a href="{{ url_for('brand_bikes', brand='Brand5') }}">
+          <div class="brand-image">
+            <img src="{{ url_for('static', filename='suzuki.jpg') }}" alt="Brand5">
+          </div>
+          <h3 class="brand-name">Suzuki</h3>
+        </a>
+      </div>
+      <div class="brand-card">
+        <a href="{{ url_for('brand_bikes', brand='Brand6') }}">
+          <div class="brand-image">
+            <img src="{{ url_for('static', filename='yamaha.jpg') }}" alt="Brand6">
+          </div>
+          <h3 class="brand-name">Yamaha</h3>
+        </a>
+      </div>
+    </div> 
+  </section>
+
+  
+
+  <section id="bike-finder">
+    <h2>Find Your Perfect Ride</h2>
+    <p>Use our advanced bike finder tool to discover the perfect bike for your needs. Whether you're into road cycling, mountain biking, or urban commuting, we've got you covered.</p>
+    <div id="bike-finder-form">
+      <label for="bike-type">Bike Type:</label>
+      <select id="bike-type">
+        <option value="Royal Enfield">Royal Enfield</option>
+        <option value="TVS">TVS</option>
+        <option value="KTM">KTM</option>
+        <option value="Yamaha">Yamaha</option>
+      </select>
+  
+      <label for="bike-brand">Brand:</label>
+      <select id="bike-brand">
+        <option value="trek">Trek</option>
+        <option value="specialized">Specialized</option>
+        <option value="giant">Giant</option>
+        <option value="cannondale">Cannondale</option>
+      </select>
+  
+      <button id="bike-finder-btn" class="button">Find My Bike</button>
+    </div>
+  
+    <div id="bike-results" class="hidden">
+      <h3>Results</h3>
+      <ul id="bike-list"></ul>
+    </div>
+  </section>
+  
+
+
+
+
+
+
+
+  <section id="latest-news">
+    <h2>Latest Bike News</h2>
+    <div class="news-grid">
+      <div class="news-item">
+        <img src="{{ url_for('static', filename='news1.webp') }}" width="600px" alt="News Image 1">
+        <div class="news-details">
+          <h3>Yamaha YZF-R7          </h3>
+          <p class="news-company">Company: Yamaha Bikes</p>
+          <p class="news-price">Price: ₹  10,00,000 - ₹ 10,10,000</p>
+          <p class="news-specs">Specifications: Yamaha YZF-R7 is a sports bike which is expected to launch in India in October 2023 in the expected price range of Rs. 10,00,000 - Rs. 10,10,000 in India. It will be available in 1 variant.</p>
+          <a href="{{ url_for('brand_bikes', brand='Brand6') }}" class="button">Read More</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <img src="{{ url_for('static', filename='news2.webp') }}"width="600px" alt="News Image 2">
+        <div class="news-details">
+          <h3>Yamaha MT-09</h3>
+          <p class="news-company">Company: Yamaha Bikes</p>
+          <p class="news-price">Price: ₹  11,50,000 - ₹ 12,00,000</p>
+          <p class="news-specs">Specifications: which is expected to launch in India in October 2023 in the expected price range of Rs. 11,50,000 - Rs. 12,00,000 in India. It will be available in 1 variant.</p>
+          <a href="{{ url_for('brand_bikes', brand='Brand6') }}" class="button">Read More</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <img src="{{ url_for('static', filename='news3.webp') }}" alt="News Image 3">
+        <div class="news-details">
+          <h3>Suzuki Gixxer 250 on-road prices in top 10 cities of India</h3>
+          <p class="news-company">Company: Suzuki Bikes</p>
+          <p class="news-price">Price: ₹ 2,42,484</p>
+          <p class="news-specs">Specifications:We recently covered the Suzuki Gixxer’s on-road prices in the top 10 cities of India and now, let’s take a look at its bigger sibling, the Gixxer 250’s asking price. Suzuki offers the quarter-litre streetfighter in two trims – standard and Ride Connect</p>
+          <a href="{{ url_for('brand_bikes', brand='Brand5') }}" class="button">Read More</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <img src="{{ url_for('static', filename='news4.webp') }}" width="600px" alt="News Image 3">
+        <div class="news-details">
+          <h3>TVS Apache RR 310 Miami Blue variant showcased!</h3>
+          <p class="news-company">Company: TVS Bikes</p>
+          <p class="news-price">Price: $1,799</p>
+          <p class="news-specs">Specifications:TVS has unveiled a new variant of its flagship motorcycle – the Apache RR 310. This new Miami Blue variant was unveiled in Columbia.</p>
+          <a href="{{ url_for('brand_bikes', brand='Brand4') }}" class="button">Read More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+
+
+  <section id="tips-guides">
+    <h2>Tips and Guides</h2>
+    <div class="blog-grid">
+      <div class="blog-item">
+        <img src="{{ url_for('static', filename='tip1.webp') }}" alt="Blog Image">
+        <div class="blog-content">
+          <h3>CYCLE WORLD MAGAZINE</h3>
+          <p class="blog-meta">Posted on June 1, 2023</p>
+          <p>A true powerhouse in the moto-blogging world packed with as many areas of motorcycle coverage as you can ask for. Cycle World was a magazine initially founded in 1962 by Joe Parkhurst, who was later inducted into the Motorcycle Hall of Fame. CycleWorld features in-depth reviews conducted by experienced professionals who remain objective and are on the cutting edge of information within the industry. What’s more, CycleWorld also publishes a ton of great Youtube content making for a more engaging experience.</p>
+          <a href="#" class="button">Read More</a>
+        </div>
+      </div>
+      <div class="blog-item">
+        <img src="{{ url_for('static', filename='tip2.webp') }}" alt="Blog Image">
+        <div class="blog-content">
+          <h3>RETURN OF THE CAFE RACERS</h3>
+          <p class="blog-meta">Posted on June 5, 2023</p>
+          <p>Return of The Cafe Racers is a custom bike blog founded by Geoff Baldwin out of Australia. Return of The Cafe Racers is big in the custom-built bikes scene, providing helpful information and a platform for users to submit their bespoke motorcycles. They also provide a map of the locations of some of the best custom bike shops in the world.</p>
+          <a href="#" class="button">Read More</a>
+        </div>
+      </div>
+      <div class="blog-item">
+        <img src="{{ url_for('static', filename='tip3.webp') }}" alt="Blog Image">
+        <div class="blog-content">
+          <h3> RIDEAPART</h3>
+          <p class="blog-meta">Posted on June 5, 2023</p>
+          <p>RideApart has a wide variety of content including product reviews, buyer’s guides, and current events in motorcycle news. Their Ask RideApart section is also a great resource, however, some of the answers they’ve provided to questions seem short and/or vague. Regardless, this is still one of the best resources for information in the industry.</p>
+          <a href="#" class="button">Read More</a>
+        </div>
+      </div>
+      <!-- Add more blog items as needed -->
+    </div>
+  </section>
+  
+
+  <section id="popular-brands">
+    <h2>Popular Bike Brands</h2>
+    <div class="brand-grid">
+      <div class="brand-item">
+        <img src="{{ url_for('static', filename='ba6.webp') }}" alt="Brand 2 Logo">
+        <div class="brand-content">
+          <h3>Bajaj Pulsar NS200</h3>
+          <p class="brand-price"> ₹ 1,42,055</p>
+          <ul class="brand-specs">
+            <li>Frame: Carbon Fiber</li>
+            <li>Gears: 22-speed</li>
+            <li>Suspension: Full</li>
+            <li>Brakes: Single Channel ABS</li>
+          </ul>
+          <a href="{{ url_for('bike_details', bike_id='bike6') }}" class="button">Learn More</a>
+        </div>
+      </div>
+      <div class="brand-item">
+        <img src="{{ url_for('static', filename='tvs16.webp') }}" alt="Brand 1 Logo">
+        <div class="brand-content">
+          <h3>TVS Ronin</h3>
+          <p class="brand-price">₹ 1,49,001</p>
+          <ul class="brand-specs">
+            <li>Frame: Aluminum</li>
+            <li>Gears: 18-speed</li>
+            <li>Suspension: Front</li>
+            <li>Brakes: SS - Single Channel ABS</li>
+          </ul>
+          <a href="{{ url_for('bike_details', bike_id='bike16') }}" class="button">Learn More</a>
+        </div>
+      </div>
+      <div class="brand-item">
+        <img src="{{ url_for('static', filename='ktm11.webp') }}" alt="Brand 3 Logo">
+        <div class="brand-content">
+          <h3>KTM 200 Duke</h3>
+          <p class="brand-price">₹ 1,95,982</p>
+          <ul class="brand-specs">
+            <li>Frame: Steel</li>
+            <li>Gears: 21-speed</li>
+            <li>Suspension: Front</li>
+            <li>Brakes: V-Brake</li>
+          </ul>
+          <a href="{{ url_for('bike_details', bike_id='bike11') }}" class="button">Learn More</a>
+        </div>
+      </div>
+    
+      <!-- Add more brand items as needed -->
+    </div>
+    <a href="#browse-brands" class="button">View All Brands</a>
+  </section>
+  
+
+  <section id="community-forums">
+    <h2>Community and Forums</h2>
+    <div class="community-content">
+      <div class="forum">
+        <h3>Bike Info Community & Forum: Your Hub for Cycling Enthusiasts</h3>
+        <p>
+          Welcome to the Bike Info Community and Forum, the ultimate online destination for all things related to biking! Whether you're a seasoned cyclist, a newbie on two wheels, or simply someone passionate about bikes, you've come to the right place.
+
+          Our community is designed to bring together individuals who share a common love for cycling. It's a vibrant and inclusive space where you can connect with fellow riders, exchange valuable insights, and tap into a wealth of knowledge about bikes.
+          
+          In our forum, you'll find a wide range of discussion categories tailored to cater to your biking interests. From general discussions where you can introduce yourself and share your experiences, to bike reviews where you can explore different models, components, and accessories, we've got it all covered.
+          
+          If you're looking for maintenance and repair tips, our dedicated section will provide you with valuable advice to keep your bike in top shape. And if you're eager to enhance your cycling performance, our training and fitness category is filled with valuable resources, training plans, and nutrition tips to help you reach your goals.</p>
+        <a href="#" class="button">Join Forum</a>
+      </div>
+      <div class="feedback">
+        <h3>Feedback</h3>
+        <form action="#" method="POST">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="message" placeholder="Your Feedback" required></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  
+
+  <footer>
+    <div id="footer-container">
+      <div class="footer-links">
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms and Conditions</a></li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <ul>
+          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  
+</body>
+</html>
+<script>
+  // Get DOM elements
+const bikeFinderForm = document.getElementById('bike-finder-form');
+const bikeResults = document.getElementById('bike-results');
+const bikeList = document.getElementById('bike-list');
+const bikeFinderBtn = document.getElementById('bike-finder-btn');
+
+// Bike finder function
+function findBikes() {
+  const bikeType = document.getElementById('bike-type').value;
+  const bikeBrand = document.getElementById('bike-brand').value;
+  const bikeSize = document.getElementById('bike-size').value;
+
+  // Perform a server request or any other logic to retrieve bike data
+  // For this example, we'll use dummy bike data
+  const dummyBikes = [
+    { brand: 'Trek', model: 'Domane', type: 'Road', size: 'M' },
+    { brand: 'Specialized', model: 'Stumpjumper', type: 'Mountain', size: 'L' },
+    { brand: 'Giant', model: 'Escape', type: 'Commuter', size: 'M' },
+    { brand: 'Cannondale', model: 'Quick', type: 'Hybrid', size: 'S' },
+  ];
+
+  // Clear previous results
+  bikeList.innerHTML = '';
+
+  // Filter bikes based on user preferences
+  const filteredBikes = dummyBikes.filter(
+    (bike) =>
+      bike.type.toLowerCase() === bikeType.toLowerCase() &&
+      bike.brand.toLowerCase() === bikeBrand.toLowerCase() &&
+      bike.size.toLowerCase() === bikeSize.toLowerCase()
+  );
+
+  // Display the results
+  if (filteredBikes.length > 0) {
+    filteredBikes.forEach((bike) => {
+      const listItem = document.createElement('li');
+      listItem.textContent = `${bike.brand} ${bike.model} (${bike.type}, ${bike.size})`;
+      bikeList.appendChild(listItem);
+    });
+    bikeResults.classList.remove('hidden');
+  } else {
+    const listItem = document.createElement('li');
+    listItem.textContent = 'No bikes found.';
+    bikeList.appendChild(listItem);
+    bikeResults.classList.remove('hidden');
+  }
+}
+
+// Event listener for the bike finder button
+bikeFinderBtn.addEventListener('click', findBikes);
+
+</script>

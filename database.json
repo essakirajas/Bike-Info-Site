@@ -1,0 +1,458 @@
+{
+  "bike": {
+    "bike1": {
+      "brand": "Royal Enfield ",
+      "des": "Royal Enfield Hunter 350 is a cruiser bike available in 3 variants and 8 colours. Hunter 350 price starts at Rs. 1,49,900 in India with top variant price starting from Rs. 1,74,430. The Royal Enfield Hunter 350 is powered by 349.34cc BS6 engine which develops a power of 20.2 bhp and a torque of 27 Nm. With front disc and rear drum brakes, Royal Enfield Hunter 350 comes up with anti-locking braking system. This Hunter 350 bike weighs 177 kg and has a fuel tank capacity of 13 liters.",
+      "dis": "349.34 cc",
+      "engine": " 349.34 cc",
+      "image_url": "re1.webp",
+      "mile": "36 kmpl",
+      "name": "Royal Enfield Hunter 350",
+      "price": "₹ 1,49,900",
+      "speed": "20.2 bhp @ 6100 rpm",
+      "type": "Retro Factory"
+    },
+    "bike11": {
+      "brand": "KTM ",
+      "des": "KTM 200 Duke is a street bike available at a starting price of Rs. 1,95,982 in India. It is available in only 1 variant and 2 colours. The KTM 200 Duke is powered by 199.5cc BS6 engine which develops a power of 24.67 bhp and a torque of 19.3 Nm. With both front and rear disc brakes, KTM 200 Duke comes up with anti-locking braking system. This 200 Duke bike weighs 159 kg and has a fuel tank capacity of 13.4 liters.",
+      "dis": " 199.5 cc",
+      "engine": " 199.5 cc",
+      "image_url": "ktm11.webp",
+      "mile": "35 kmpl",
+      "name": "KTM 200 Duke",
+      "price": "₹ 1,95,982",
+      "speed": "24.67 bhp @ 10000 rpm",
+      "type": "Standard"
+    },
+    "bike12": {
+      "brand": "KTM",
+      "des": "KTM RC 390 is a sports bike available in 2 variants and 3 colours. RC 390 price starts at Rs. 3,16,163 in India with top variant price starting from Rs. 3,18,382. The KTM RC 390 is powered by 373.27cc BS6 engine which develops a power of 42.9 bhp and a torque of 37 Nm. With both front and rear disc brakes, KTM RC 390 comes up with anti-locking braking system. This RC 390 bike weighs 172 kg and has a fuel tank capacity of 13.7 liters.  The 2022 KTM RC390 has been launched in the Indian market to rival the likes of the TVS Apache RR 310 and the Kawasaki Ninja 300.",
+      "dis": "373.27 cc",
+      "engine": " 373.27 cc",
+      "image_url": "ktm12.webp",
+      "mile": "29 kmpl",
+      "name": "KTM RC 390",
+      "price": "₹ 3,16,163",
+      "speed": "42.9 bhp @ 9000 rpm",
+      "type": "GP Edition"
+    },
+    "bike13": {
+      "brand": "KTM",
+      "des": "KTM 390 Adventure is a adventure bike available in 2 variants and 3 colours. 390 Adventure price starts at Rs. 3,39,247 in India with top variant price starting from Rs. 3,61,378. The KTM 390 Adventure is powered by 373.27cc BS6 engine which develops a power of 42.9 bhp and a torque of 37 Nm. With both front and rear disc brakes, KTM 390 Adventure comes up with anti-locking braking system. This 390 Adventure bike weighs 177 kg and has a fuel tank capacity of 14.5 liters.  KTM India has launched the OBD2-compliant 390 Adventure in our market. The 2023 iteration of the adventure-tourer motorcycle receives the necessary hardware to comply with the newest emission norms. This variant of the motorcycle will be sold alongside the more-affordable 390 Adventure X in our market.",
+      "dis": "373.27cc",
+      "engine": " 373.27 cc",
+      "image_url": "ktm13.webp",
+      "mile": "32.7 kmpl",
+      "name": "KTM 390 Adventure",
+      "price": "₹ 3,39,247",
+      "speed": "42.9 bhp @ 9000 rpm",
+      "type": "Alloy Wheel"
+    },
+    "bike16": {
+      "brand": "TVS",
+      "des": "TVS Ronin is a cruiser bike available at a starting price of Rs. 1,49,001 in India. It is available in 3 variants and 6 colours with top variant price starting from Rs. 1,68,751. The TVS Ronin is powered by 225.9cc BS6 engine which develops a power of 20.1 bhp and a torque of 19.93 Nm. With both front and rear disc brakes, TVS Ronin comes up with anti-locking braking system. This Ronin bike weighs 159 kg and has a fuel tank capacity of 14 liters.  The new Ronin 225 is TVS Motor Company’s first ever neo-retro scrambler-style motorcycle. It is offered in three variants and they are differentiated by their colour schemes.",
+      "dis": "225.9 cc",
+      "engine": "225.9 cc",
+      "image_url": "tvs16.webp",
+      "mile": "42 kmpl",
+      "name": "TVS Ronin",
+      "price": "₹ 1,49,001",
+      "speed": "20.1 bhp @ 7750 rpm",
+      "type": "SS - Single Channel ABS"
+    },
+    "bike17": {
+      "brand": "TVS",
+      "des": "TVS Ntorq 125 is a scooter available in 6 variants and 14 colours. Ntorq 125 price starts at Rs. 86,844 in India with top variant price starting from Rs. 1,08,200. The TVS Ntorq 125 is powered by 124.8cc BS6 engine which develops a power of 9.25 bhp and a torque of 10.5 Nm. With both front and rear drum brakes, TVS Ntorq 125 comes up with combined braking system of both wheels. This Ntorq 125 scooter weighs 118 kg and has a fuel tank capacity of 5.8 liters.",
+      "dis": "124.8cc",
+      "engine": "124.8 cc",
+      "image_url": "tvs17.webp",
+      "mile": "41.5 kmpl",
+      "name": "TVS Ntorq 125",
+      "price": "₹ 86,844",
+      "speed": "9.25 bhp @ 7,000 rpm",
+      "type": "Drum - BS VI"
+    },
+    "bike18": {
+      "brand": "TVS",
+      "des": "TVS Apache RR310 is a sports bike available in only 1 variant and 2 colours. Apache RR310 price starts at Rs. 2,71,825 in India. The TVS Apache RR310 is powered by 312.2cc BS6 engine which develops a power of 33.5 bhp and a torque of 27.3 Nm. With both front and rear disc brakes, TVS Apache RR310 comes up with anti-locking braking system. This Apache RR310 bike weighs 174 kg and has a fuel tank capacity of 11 liters.  TVS Motor Company has launched the 2021 Apache RR 310 in the Indian market. The latest iteration of the motorcycle packs several upgrades over the 2020 model. These include several standard revisions and optional accessories.",
+      "dis": "312.2cc",
+      "engine": "312.2 cc",
+      "image_url": "tvs18.webp",
+      "mile": "34.7 kmpl",
+      "name": "TVS Apache RR310",
+      "price": "₹ 2,71,825",
+      "speed": "33.5 bhp @ 9,700 rpm",
+      "type": "Standard - BS VI"
+    },
+    "bike2": {
+      "brand": "Royal Enfield ",
+      "des": "Royal Enfield Continental GT 650 is a cafe racer bike available in 4 variants and 7 colours. Continental GT 650 price starts at Rs. 3,18,417 in India with top variant price starting from Rs. 3,44,283. The Royal Enfield Continental GT 650 is powered by 648cc BS6 engine which develops a power of 47 bhp and a torque of 52 Nm. With both front and rear disc brakes, Royal Enfield Continental GT 650 comes up with anti-locking braking system. This Continental GT 650 bike weighs 211 kg and has a fuel tank capacity of 12.5 liters.",
+      "dis": "648 cc",
+      "engine": "648 cc",
+      "image_url": "re2.webp",
+      "mile": "25 kmpl",
+      "name": "Royal Enfield Continental GT 650",
+      "price": "₹ 3,18,417 ",
+      "speed": "47 bhp @ 7,250 rpm",
+      "type": "Standard - BS VI"
+    },
+    "bike21": {
+      "Engine": "1,340 cc",
+      "brand": "Suzuki",
+      "des": "Suzuki Hayabusa is a super bike available at a starting price of Rs. 16,97,240 in India. It is available in only 1 variant and 3 colours. The Suzuki Hayabusa is powered by 1340cc BS6 engine which develops a power of 190 bhp and a torque of 142 Nm. With both front and rear disc brakes, Suzuki Hayabusa comes up with anti-locking braking system. This Hayabusa bike weighs 266 kg and has a fuel tank capacity of 20 liters.  The 2023 Suzuki Hayabusa is priced at a premium over the previous versions. While it is majorly the same, it gets a list of new colour schemes as part of the update.",
+      "dis": "1340 cc",
+      "image_url": "su21.webp",
+      "mile": "18 kmpl",
+      "name": "Suzuki Hayabusa",
+      "price": "₹ 16,97,240",
+      "speed": "190 bhp @ 9700 rpm",
+      "type": "Standard"
+    },
+    "bike22": {
+      "brand": "Suzuki",
+      "des": "Suzuki V-Strom SX is a adventure bike available in 2 variants and 6 colours. V-Strom SX price starts at Rs. 2,13,888 in India with top variant price starting from Rs. 2,14,128. The Suzuki V-Strom SX is powered by 249cc BS6 engine which develops a power of 26.1 bhp and a torque of 22.2 Nm. With both front and rear disc brakes, Suzuki V-Strom SX comes up with anti-locking braking system. This V-Strom SX bike weighs 167 kg and has a fuel tank capacity of 12 liters.  Suzuki Motorcycles India has updated its portfolio with the launch of the most affordable V-Strom series model. This new quarter-litre adventure tourer, christened as the V-Strom SX, rivals the likes of KTM 250 Adventure, Benelli TRK251, Royal Enfield Himalayan, and Hero XPulse 200 in the Indian market.",
+      "dis": "249cc",
+      "engine": "249cc",
+      "image_url": "su22.webp",
+      "mile": "36 kmpl",
+      "name": "Suzuki V-Strom SX",
+      "price": "₹ 2,13,888",
+      "speed": " 26.1 bhp @ 9300 rpm",
+      "type": "Standard"
+    },
+    "bike23": {
+      "brand": "Suzuki ",
+      "des": "Suzuki Katana is a super bike available in only 1 variant and 2 colours. Katana price starts at Rs. 13,68,247 in India. The Suzuki Katana is powered by 999cc BS6 engine which develops a power of 150.19 bhp and a torque of 106 Nm. With both front and rear disc brakes, Suzuki Katana comes up with anti-locking braking system. This Katana bike weighs 217 kg and has a fuel tank capacity of 12 liters.  Suzuki India has launched its first litre-class motorcycle for 2022, the Katana. It’s priced at Rs 13,61,000 (ex-showroom Delhi) and is the only 1000cc offering in Suzuki India’s current lineup. Let’s see what it has to offer.",
+      "dis": "999cc",
+      "engine": "999cc",
+      "image_url": "su23.webp",
+      "mile": "-",
+      "name": "Suzuki Katana",
+      "price": "₹ 13,68,247",
+      "speed": "150.19 bhp @ 11000 rpm",
+      "type": "Standard"
+    },
+    "bike26": {
+      "brand": "Yamaha",
+      "des": "Yamaha MT 15 V2 is a street bike available in 2 variants and 6 colours. MT 15 V2 price starts at Rs. 1,65,903 in India with top variant price starting from Rs. 1,70,408. The Yamaha MT 15 V2 is powered by 155cc BS6 engine which develops a power of 18.1 bhp and a torque of 14.1 Nm. With both front and rear disc brakes, Yamaha MT 15 V2 comes up with anti-locking braking system. This MT 15 V2 bike weighs 141 kg and has a fuel tank capacity of 10 liters.  The 2023 Yamaha MT-15 has received several updates over its predecessor. The biggest upgrade on the 2023 model is the addition of a traction control system and a dual-channel ABS. In comparison, the previous iteration of the roadster-segment motorcycle only featured the safety net of a single-channel ABS.",
+      "dis": "155cc",
+      "engine": "155cc",
+      "image_url": "ya26.webp",
+      "mile": "47 kmpl",
+      "name": "Yamaha MT 15 V2",
+      "price": "₹ 1,65,903",
+      "speed": "18.1 bhp @ 10,000 rpm",
+      "type": "Standard"
+    },
+    "bike27": {
+      "brand": "Yamaha ",
+      "des": "Yamaha R15S is a sports bike available in only 1 variant. R15S price starts at Rs. 1,64,256 in India. The Yamaha R15S is powered by 155cc BS6 engine which develops a power of 18.1 bhp and a torque of 14.2 Nm. With both front and rear disc brakes, Yamaha R15S comes up with anti-locking braking system. This R15S bike weighs 142 kg and has a fuel tank capacity of 11 liters.  India Yamaha Motor has updated its portfolio with the launch of the new YZF-R15S V3.0 in our market. This new variant of the motorcycle uses a single-piece step-up seat instead of the split-style unit on the YZF-R15 V4.0. The motorcycle is available in a single paint option – Racing Blue.",
+      "dis": "155cc",
+      "engine": "155cc",
+      "image_url": "ya27.webp",
+      "mile": "\t45 kmpl",
+      "name": "Yamaha R15S",
+      "price": "₹ 1,64,256 ",
+      "speed": "18.1 bhp @ 10,000 rpm",
+      "type": "Standard"
+    },
+    "bike28": {
+      "brand": "Yamaha ",
+      "des": "Yamaha FZS Fi V4 is a street bike available in only 1 variant and 3 colours. FZS Fi V4 price starts at Rs. 1,28,982 in India. The Yamaha FZS Fi V4 is powered by 149cc BS6 engine which develops a power of 12.2 bhp and a torque of 13.3 Nm. With both front and rear disc brakes, Yamaha FZS Fi V4 comes up with anti-locking braking system. This FZS Fi V4 bike weighs 136 kg and has a fuel tank capacity of 13 liters.  The Yamaha FZ S V4 is available in a single variant- Deluxe. It features a fascia that is different from the V3 and gets LED turn indicators as well. Apart from that, the styling remains largely unchanged and the V4 has carried over the large fuel tank, side panels, and overall profile. The FZ S V4 also comes with an LCD console that houses a speedometer, odometer, trip meter, fuel level readout, and smartphone connectivity.",
+      "dis": "149cc",
+      "engine": "149cc",
+      "image_url": "ya28.webp",
+      "mile": "\t48.5 kmpl",
+      "name": "Yamaha FZS Fi V4",
+      "price": "₹ 1,28,982",
+      "speed": "12.2 bhp @ 7,250 rpm",
+      "type": "Deluxe"
+    },
+    "bike6": {
+      "brand": "Bajaj ",
+      "des": "Bajaj Pulsar NS200 is a street bike available at a starting price of Rs. 1,42,055 in India. It is available in 2 variants and 8 colours with top variant price starting from Rs. 1,50,670. The Bajaj Pulsar NS200 is powered by 199.5cc BS6 engine which develops a power of 24.13 bhp and a torque of 18.74 Nm. With both front and rear disc brakes, Bajaj Pulsar NS200 comes up with anti-locking braking system. This Pulsar NS200 bike weighs 159.5 kg and has a fuel tank capacity of 12 liters.",
+      "dis": "199.5 cc",
+      "engine": "199.5 cc",
+      "image_url": "ba6.webp",
+      "mile": "200 mileage",
+      "name": "Bajaj Pulsar NS200",
+      "price": "₹ 1,42,055 ",
+      "speed": "24.13 bhp @ 9,750 rpm",
+      "type": "Single Channel ABS"
+    },
+    "bike7": {
+      "brand": "Bajaj",
+      "des": "Bajaj Dominar 250 is a street bike available in only 1 variant and 3 colours. Dominar 250 price starts at Rs. 1,78,282 in India. The Bajaj Dominar 250 is powered by 248.8cc BS6 engine which develops a power of 26.63 bhp and a torque of 23.5 Nm. With both front and rear disc brakes, Bajaj Dominar 250 comes up with anti-locking braking system. This Dominar 250 bike weighs 180 kg and has a fuel tank capacity of 13 liters.  The Dominar 250 is the most accessible Bajaj touring motorcycle. This bike was developed to cater to the growing needs of Indian youth who want to travel but have a tight budget. It is the smaller sibling of the Dominar 400- which is a premium offering from the company.",
+      "dis": "248.8 cc",
+      "engine": "\t248.8 cc",
+      "image_url": "ba7.webp",
+      "mile": "32 kmpl",
+      "name": "Bajaj Dominar 250",
+      "price": "₹ 1,78,282",
+      "speed": "26.63 bhp @ 8,500 rpm",
+      "type": "Standard"
+    },
+    "bike8": {
+      "brand": "Bajaj",
+      "des": "Bajaj Platina 110 is a mileage bike available in 3 variants and 9 colours. Platina 110 price starts at Rs. 68,357 in India with top variant price starting from Rs. 75,410. The Bajaj Platina 110 is powered by 115.45cc BS6 engine which develops a power of 8.48 bhp and a torque of 9.81 Nm. With both front and rear drum brakes, Bajaj Platina 110 comes up with combined braking system of both wheels. This Platina 110 bike weighs 119 kg and has a fuel tank capacity of 11 liters.  The Bajaj Platina 110 is the only motorcycle in its segment to feature the safety net of Anti-lock Braking System (ABS). The commuter motorcycle comes with a 240mm single disc with a single-channel ABS on the front wheel while the rear uses a 110mm drum. It is also available in a more affordable variant that gets a drum at both ends.",
+      "dis": "115.45 cc",
+      "engine": "\t115.45 cc",
+      "image_url": "ba8.webp",
+      "mile": "\t70 kmpl",
+      "name": "Bajaj Platina 110",
+      "price": "₹ 68,357 ",
+      "speed": "8.48 bhp @ 7,000 rpm",
+      "type": "Bajaj Platina 110"
+    }
+  },
+  "bikes": {
+    "Brand1": {
+      "bikes": {
+        "bike1": {
+          "img": "re1.webp",
+          "name": "Royal Enfield Hunter 350",
+          "price": "₹ 1,49,900",
+          "type": "Retro Factory"
+        },
+        "bike2": {
+          "img": "re2.webp",
+          "name": "Royal Enfield Continental GT 650",
+          "price": "₹ 3,18,417 ",
+          "type": "Standard - BS VI"
+        }
+      },
+      "description": "Royal Enfield bike price starts from Rs. 1,49,900. Royal Enfield offers 9 new models in India with most popular bikes being Hunter 350, Classic 350 and Bullet 350. The upcoming bikes of Royal Enfield include Bullet 350 Next Gen, Himalayan 650 and Himalayan 450. Most expensive Royal Enfield bike is Super Meteor 650, which is priced at Rs. 3,54,398.",
+      "logo": "re.jpg",
+      "name": "Royal Enfield Bikes"
+    },
+    "Brand2": {
+      "bikes": {
+        "bike6": {
+          "img": "ba6.webp",
+          "name": "Bajaj Pulsar NS200",
+          "price": "₹ 1,42,055",
+          "type": "Single Channel ABS"
+        },
+        "bike7": {
+          "img": "ba7.webp",
+          "name": "Bajaj Dominar 250",
+          "price": "₹ 1,78,282",
+          "type": "Standard"
+        },
+        "bike8": {
+          "img": "ba8.webp",
+          "name": "Bajaj Platina 110",
+          "price": "₹ 68,357 ",
+          "type": "₹ 68,357 "
+        }
+      },
+      "description": "Bajaj bike price starts from Rs. 65,943. Bajaj offers 20 new models in India with most popular bikes being Pulsar 125, Pulsar 150 and Pulsar N160. Most expensive Bajaj bike is Dominar 400, which is priced at Rs. 2,24,916.  Bajaj Motorcycles is one of the largest motorcycle manufacturers in India. Based out of Pune, Bajaj has manufacturing plants in Chakan, Waluj in Maharashtra and Pantnagar in Uttarakhand. Its oldest plant in Akurdi, Pune currently houses company’s corporate office and research & development centre.",
+      "logo": "bajaj.jpg",
+      "name": "Bajaj Bikes"
+    },
+    "Brand3": {
+      "bikes": {
+        "bike11": {
+          "img": "ktm11.webp",
+          "name": "KTM 200 Duke",
+          "price": "₹ 1,95,982",
+          "type": "Standard"
+        },
+        "bike12": {
+          "img": "ktm12.webp",
+          "name": "KTM RC 390",
+          "price": "₹ 3,16,163",
+          "type": "GP Edition"
+        },
+        "bike13": {
+          "img": "ktm13.webp",
+          "name": "KTM 390 Adventure",
+          "price": "₹ 3,39,247",
+          "type": "Alloy Wheel"
+        }
+      },
+      "description": "KTM bike price starts from Rs. 1,78,984. KTM offers 10 new models in India with most popular bikes being 200 Duke, 390 Duke and 250 Duke. The upcoming bikes of KTM include 390 Duke [2024] and 650 Duke. Most expensive KTM bike is 390 Adventure, which is priced at Rs. 3,39,247. In 1953, businessman Ernst Kronreif became a sizable shareholder Kraftfahrzeug Trunkenpolz Mattighofen which was then renamed and registered as Kronreif and Trunkenpolz Mattighofen. KTM started serial production of R100 in 1954. With just 20 employees, motorcycles were built at the rate of three per day.",
+      "logo": "ktm.jpg",
+      "name": "KTM Bikes"
+    },
+    "Brand4": {
+      "bikes": {
+        "bike16": {
+          "img": "tvs16.webp",
+          "name": "TVS Ronin",
+          "price": "₹ 1,49,001",
+          "type": "SS - Single Channel ABS"
+        },
+        "bike17": {
+          "img": "tvs17.webp",
+          "name": "TVS Ntorq 125",
+          "price": "₹ 86,844",
+          "type": "Drum - BS VI"
+        },
+        "bike18": {
+          "img": "tvs18.webp",
+          "name": "TVS Apache RR310",
+          "price": "₹ 2,71,825 ",
+          "type": "Standard - BS VI"
+        }
+      },
+      "description": "TVS bike price starts from Rs. 44,227. TVS offers 18 new models in India with most popular bikes being Raider 125, Apache RTR 160 and Apache RTR 160 4V. The upcoming bikes of TVS include Apache RTR 310 and Creon. Most expensive TVS bike is Apache RR310, which is priced at Rs. 2,71,825.  TVS was established by T. V. Sundaram Iyengar. He was born in 1877 in Thirukkurungudi in the Tirunelveli district of Madras Presidency, British India. He began with Madurai's first bus service in 1911 and founded T.V.Sundaram Iyengar and Sons Limited, a company in the transportation business with a large fleet of trucks and buses under the name of Southern Roadways Limited",
+      "logo": "tvs.jpg",
+      "name": "TVS Bikes"
+    },
+    "Brand5": {
+      "bikes": {
+        "bike21": {
+          "img": "su21.webp",
+          "name": "Suzuki Hayabusa",
+          "price": "₹ 16,97,240",
+          "type": "Standard"
+        },
+        "bike22": {
+          "img": "su22.webp",
+          "name": "Suzuki V-Strom SX",
+          "price": "₹ 2,13,888",
+          "type": "Standard [2022]"
+        },
+        "bike23": {
+          "img": "su23.webp",
+          "name": "Suzuki Katana",
+          "price": "₹ 13,68,247",
+          "type": "Standard"
+        }
+      },
+      "description": "Suzuki bike price starts from Rs. 81,698. Suzuki offers 11 new models in India with most popular bikes being Gixxer SF, Access 125 and Burgman Street 125. The upcoming bikes of Suzuki include Burgman Street Electric, Suzuki GSX-8S and V-Strom 800DE. Most expensive Suzuki bike is Hayabusa, which is priced at Rs. 16,97,240. Suzuki Motor Corporation (SMC), a global giant of motorcycle manufacturing is headquartered in Japan. It holds major stake in its Indian subsidiary, Suzuki Motorcycle India Private Limited (SMIL). SMIL was set up after Suzuki's re-entry into the Indian two-wheeler market after it severed ties with partner TVS in 2000-01. Suzuki was then the technology provider in the former joint venture company TVS Suzuki.",
+      "logo": "suzuki.jpg",
+      "name": "Suzuki Bikes"
+    },
+    "Brand6": {
+      "bikes": {
+        "bike26": {
+          "img": "ya26.webp",
+          "name": "Yamaha MT 15 V2",
+          "price": "₹ 1,65,903",
+          "type": "Standard"
+        },
+        "bike27": {
+          "img": "ya27.webp",
+          "name": "Yamaha R15S",
+          "price": "₹ 1,64,256 ",
+          "type": "Standard"
+        },
+        "bike28": {
+          "img": "ya28.webp",
+          "name": "Yamaha FZS Fi V4",
+          "price": "₹ 1,28,982",
+          "type": "Deluxe"
+        }
+      },
+      "description": "Yamaha bike price starts from Rs. 80,970. Yamaha offers 11 new models in India with most popular bikes being MT 15 V2, FZ S FI and FZ FI. The upcoming bikes of Yamaha include MT-03, YZF-R3 and YZF-R7. Most expensive Yamaha bike is R15 V4, which is priced at Rs. 1,81,704. Yamaha derived its name from Torakusu Yamaha, the company’s founder. It started off by manufacturing Western musical instruments in Japan back 1887, and it wasn’t till 1955 that the company’s motorcycle division was set up. While Yamaha still manufactures musical instruments, with the distinction of being regarded as one of the leading names in the field, it also forms one fourth of the big four Japanese manufacturers in the two-wheeler industry.",
+      "logo": "yamaha.jpg",
+      "name": "Yamaha Bikes"
+    },
+    "review": {
+      "reviews": {
+        "-NYrzmd91PSso7l2Y72b": {
+          "comment": "vasfmasv",
+          "rating": "5",
+          "user": "essaki"
+        },
+        "-NYrzxprkST1w807oPGT": {
+          "comment": "vasfmasv",
+          "rating": "5",
+          "user": "essaki"
+        },
+        "-NYrzzM_nkOMM6mWJyit": {
+          "comment": "vasfmasv",
+          "rating": "5",
+          "user": "essaki"
+        },
+        "-NYs1fmzdBznP1UofBtL": {
+          "comment": " nm",
+          "rating": "5",
+          "user": "essaki"
+        },
+        "-NYs2KbzBhAllfbyhrhM": {
+          "comment": "zc",
+          "rating": "5",
+          "user": "c"
+        },
+        "-NYs3O_rTeZL_p75uHmr": {
+          "comment": "x x ",
+          "rating": "4",
+          "user": "essaki"
+        },
+        "-NYs3jJND3nBqm8M6I3b": {
+          "comment": "x x ",
+          "rating": "4",
+          "user": "essaki"
+        },
+        "-NZ1t7ujzH2ZFCsIesyt": {
+          "comment": "super",
+          "rating": "5",
+          "user": "mukdhesh "
+        },
+        "-NZ1t9auM8LSLclf_zOD": {
+          "comment": "super",
+          "rating": "5",
+          "user": "mukdhesh "
+        },
+        "-NZ9kBUiAu5ZNfZlZTgE": {
+          "comment": "ok la yepdi moonu page nu solra\r\n",
+          "rating": "3",
+          "user": "kannapiran"
+        },
+        "-NZErwM5YAXI92BYLzah": {
+          "comment": "good bike",
+          "rating": "5",
+          "user": "david andro"
+        },
+        "-NZErwPTqAT0Kz53kQnL": {
+          "comment": "good bike",
+          "rating": "5",
+          "user": "david andro"
+        },
+        "-NZErwReSIW_ylFvl3fs": {
+          "comment": "good bike",
+          "rating": "5",
+          "user": "david andro"
+        },
+        "-NZGwlo8gmu61Cg7VaQ6": {
+          "comment": "Did you store in database ",
+          "rating": "5",
+          "user": "Essaki raja"
+        },
+        "-N_HvJFFvOtIL2QRJ6w2": {
+          "comment": "Your very  bad  because u do not tell the project 🤬",
+          "rating": "1",
+          "user": "Abrat"
+        },
+        "-N_HvL5s6rlA38U_dIZp": {
+          "comment": "Your very  bad  because u do not tell the project 🤬",
+          "rating": "1",
+          "user": "Abrat"
+        },
+        "-N_HvLlOclFBwnlnccNM": {
+          "comment": "Your very  bad  because u do not tell the project 🤬",
+          "rating": "1",
+          "user": "Abrat"
+        },
+        "-N_HvS5-9wWyerJkkSsc": {
+          "comment": "Your very  bad  because u do not tell the project 🤬",
+          "rating": "1",
+          "user": "Abrat"
+        },
+        "-NaKtDJX9Ayout7c7kBa": {
+          "comment": "zx",
+          "rating": "5",
+          "user": "essaki"
+        },
+        "-NaKtFZJ4O4yTv3znGdk": {
+          "comment": "sd",
+          "rating": "5",
+          "user": "essaki"
+        }
+      }
+    }
+  }
+}
