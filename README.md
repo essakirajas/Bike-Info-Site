@@ -10,11 +10,14 @@ A simple full-stack bike information and review web app built with:
 
 ## 📸 Screenshots
 
-Project screenshots are located in the `/screenshots` directory:
+### 🏠 Home Page (Brand Listing)
+![Home Page](screenshots/home1.png)
 
-- 🏍️ Brand Listing Page  
-- 🚲 Bike List by Brand  
-- ⭐ Bike Details with Review Submission  
+### 🏍️ Bike Brands
+![Brands Page](screenshots/brands.png)
+
+### 🚲 Bike Details with Reviews
+![Bike Details](screenshots/bikes.png)
 
 ---
 
